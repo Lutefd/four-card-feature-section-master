@@ -1,0 +1,23 @@
+header {
+  padding: 1.5rem;
+  max-width: 95%;
+}
+header h1 {
+  text-align: center;
+  font-weight: 200;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  max-width: 100%;
+}
+.bold-title {
+  font-weight: bold;
+  color: var(--Vdb);
+}
+p {
+  text-align: center;
+  color: var(--Grbl);
+}
+header p {
+  margin-top: -1rem;
+  font-weight: 400;
+}

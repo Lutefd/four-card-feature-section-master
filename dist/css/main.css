@@ -608,4 +608,88 @@ ul {
   height: 0.25rem;
   margin: 0 auto;
   margin-top: -1rem;
+}
+
+header {
+  padding: 1.5rem;
+  max-width: 95%;
+}
+
+header h1 {
+  text-align: center;
+  font-weight: 200;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  max-width: 100%;
+}
+
+.bold-title {
+  font-weight: bold;
+  color: var(--Vdb);
+}
+
+p {
+  text-align: center;
+  color: var(--Grbl);
+}
+
+header p {
+  margin-top: -1rem;
+  font-weight: 400;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  gap: 2em;
+  padding: 2.5rem;
+}
+
+.box {
+  background-color: var(--white);
+  width: 100%;
+  border-radius: 0.5rem;
+  display: grid;
+  box-shadow: var(--shadow-4);
+}
+.box .box-1,
+.box .box-2,
+.box .box-3,
+.box .box-4 {
+  display: grid;
+  padding: 1.5rem;
+  border-top: 0.25rem solid var(--primary-200);
+  overflow: hidden;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.box .box-1 h5,
+.box .box-2 h5,
+.box .box-3 h5,
+.box .box-4 h5 {
+  color: var(--Vdb);
+  font-weight: 600;
+}
+.box .box-1 p,
+.box .box-2 p,
+.box .box-3 p,
+.box .box-4 p {
+  margin-top: -1rem;
+  text-align: left;
+}
+.box .box-1 .img-end,
+.box .box-2 .img-end,
+.box .box-3 .img-end,
+.box .box-4 .img-end {
+  justify-self: end;
+  transform: scale(0.9);
+}
+.box .box-2 {
+  border-top: 0.25rem solid var(--primary-100);
+}
+.box .box-3 {
+  border-top: 0.25rem solid var(--primary-300);
+}
+.box .box-4 {
+  border-top: 0.25rem solid var(--primary-400);
 }/*# sourceMappingURL=main.css.map */
