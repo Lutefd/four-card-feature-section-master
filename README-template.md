@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL:https://sparkly-mochi-f0bef9.netlify.app/)
+- Live Site URL:(https://sparkly-mochi-f0bef9.netlify.app/)
 
 ## My process
 
