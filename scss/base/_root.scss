@@ -62,6 +62,7 @@ body {
   background-color: var(--lg);
   display: grid;
   place-items: center;
+  min-height: 100vh;
 }
 
 p {

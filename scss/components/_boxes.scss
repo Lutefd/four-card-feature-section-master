@@ -1,8 +1,12 @@
 main {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   place-items: center;
-  gap: 2em;
   padding: 2.5rem;
+}
+.try-1 {
+  display: grid;
+  gap: 2em;
 }
 .box {
   background-color: var(--white);
@@ -41,5 +45,27 @@ main {
   }
   .box-4 {
     border-top: 0.25rem solid var(--primary-400);
+  }
+}
+@media (min-width: 768px) {
+  .try-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      'a b d'
+      '. c .';
+    gap: 2em;
+    max-width: 80em;
+  }
+  .wrapper-a {
+    grid-area: a;
+    transform: translateY(50%);
+  }
+  .wrapper-c {
+    grid-area: c;
+  }
+  .wrapper-d {
+    grid-area: d;
+    transform: translateY(50%);
   }
 }

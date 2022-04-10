@@ -400,6 +400,7 @@ body {
   background-color: var(--lg);
   display: grid;
   place-items: center;
+  min-height: 100vh;
 }
 
 p {
@@ -611,8 +612,9 @@ ul {
 }
 
 header {
-  padding: 1.5rem;
-  max-width: 95%;
+  padding: 1.7rem;
+  padding-top: 5em;
+  max-width: 100%;
 }
 
 header h1 {
@@ -638,11 +640,29 @@ header p {
   font-weight: 400;
 }
 
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+    max-width: 22ch;
+    margin: 0 auto;
+  }
+
+  header p {
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+    max-width: 55ch;
+  }
+}
 main {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   place-items: center;
-  gap: 2em;
   padding: 2.5rem;
+}
+
+.try-1 {
+  display: grid;
+  gap: 2em;
 }
 
 .box {
@@ -692,4 +712,28 @@ main {
 }
 .box .box-4 {
   border-top: 0.25rem solid var(--primary-400);
+}
+
+@media (min-width: 768px) {
+  .try-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "a b d" ". c .";
+    gap: 2em;
+    max-width: 80em;
+  }
+
+  .wrapper-a {
+    grid-area: a;
+    transform: translateY(50%);
+  }
+
+  .wrapper-c {
+    grid-area: c;
+  }
+
+  .wrapper-d {
+    grid-area: d;
+    transform: translateY(50%);
+  }
 }/*# sourceMappingURL=main.css.map */
